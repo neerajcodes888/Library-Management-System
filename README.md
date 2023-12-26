@@ -57,3 +57,21 @@ This project is a web-based Library Management System that allows users to manag
 
    ```bash
    git clone https://github.com/your-username/library-management-system.git
+
+
+## Screenshots
+
+![lms](https://github.com/neerajcodes888/Library-Management-System/assets/98253646/e0c38796-fd60-4681-afe7-1043144074e0)
+
+
+
+## Contributing
+
+Feel free to contribute to this project. Fork the repository, make your changes, and submit a pull request.
+
+For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
