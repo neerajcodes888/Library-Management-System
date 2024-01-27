@@ -5,7 +5,7 @@
 
 # Demo Link
 
-<div align="center">![Library Management System](http://ourlms2024.great-site.net/)</div>
+<div align="center">![lms](http://ourlms2024.great-site.net/)</div>
 
 
 
