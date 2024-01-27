@@ -5,7 +5,7 @@
 
 # Demo Link
 
-  ![lms] (http://ourlms2024.great-site.net/)
+  [lms](http://ourlms2024.great-site.net/)
 
 
 
