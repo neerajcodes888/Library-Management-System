@@ -5,7 +5,8 @@
 
 # Demo Link
 
-<div align="center">![lms](http://ourlms2024.great-site.net/)</div>
+  ![lms](http://ourlms2024.great-site.net/)
+
 
 
 
