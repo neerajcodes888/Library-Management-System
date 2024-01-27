@@ -1,6 +1,6 @@
 # Library-Management-System
 
-![lms](https://github.com/neerajcodes888/Library-Management-System/assets/98253646/e0c38796-fd60-4681-afe7-1043144074e0)
+![lms](https://github.com/neerajcodes888/Library-Management-System/blob/main/LMS_Demo-min.gif)
 
 A simple Library Management System implemented using PHP, HTML, CSS, and JavaScript.
 
@@ -62,7 +62,7 @@ This project is a web-based Library Management System that allows users to manag
 
 ## Screenshots
 
-![lms](https://github.com/neerajcodes888/Library-Management-System/assets/98253646/e0c38796-fd60-4681-afe7-1043144074e0)
+![lms](https://github.com/neerajcodes888/Library-Management-System/blob/main/LMS_Demo-min.gif)
 
 
 
