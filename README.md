@@ -3,7 +3,7 @@
 ![lms](https://github.com/neerajcodes888/Library-Management-System/blob/main/LMS_Demo-min.gif)
 
 
-# Demo Link(Click  👇)
+# Deployed Link(Click  👇)
 
 
 <div align="center">
