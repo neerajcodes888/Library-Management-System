@@ -206,7 +206,7 @@ if (isset($_POST['issue_book'])) {
 		<?php
 	}
 else{
-	$query = "insert into issued_books values('',$_POST[book_no],'$_POST[book_name]','$_POST[book_author]','$_POST[student_id]',current_date,'N/A',)";
+	$query = "insert into issued_books values('',$_POST[book_no],'$_POST[book_name]','$_POST[book_author]','$_POST[student_id]',current_date,'N/A')";
     $query_run=mysqli_query($connection, $query);
 	// $query1 = "update books set quantity=quantity-1 where book_no=$_POST[book_no]";
 	// $query_run= mysqli_query($connection, $query1);
