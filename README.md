@@ -69,7 +69,7 @@ This project is a web-based Library Management System that allows users to manag
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/library-management-system.git
+   git clone https://github.com/neerajcodes888/library-management-system.git
 
 
 ## Screenshots
