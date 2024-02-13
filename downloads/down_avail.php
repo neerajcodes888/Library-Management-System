@@ -9,10 +9,10 @@ require('../pdf/fpdf.php');
 
 function connectDB()
 {
-       $host = 'sql206.infinityfree.com';
-    $username = 'if0_35734489';
-    $password = '6XtiplIJWOb';
-    $dbname = 'if0_35734489_lms';
+       $host = 'localhost';
+    $username = 'root';
+    $password = '';
+    $dbname = 'lms';
 
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
