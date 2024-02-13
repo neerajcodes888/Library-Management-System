@@ -9,7 +9,7 @@ require('../pdf/fpdf.php');
 
 function connectDB()
 {
-    $host = 'localhost';
+          $host = 'localhost';
     $username = 'root';
     $password = '';
     $dbname = 'lms';
@@ -42,62 +42,78 @@ function getAvailData()
 }
 
 
+
 $pdf = new FPDF();
 $pdf->AddPage();
-$pdf->Image('../images/pdf_logo.png', 0, -1, 90);
-$pdf->Ln(5);
+// $pdf->Image('../images/pdf_logo.png', 0, -1, 90);
+// $pdf->Ln(5);
+// Set line width
+$pdf->SetLineWidth(0.5);
+
+// Draw a line
+$pdf->Line(10, 10, 100, 10);
 $pdf->SetFont('Arial', 'B', 13);
-$pdf->Cell(40);
-$pdf->Cell(90, 10, 'Admin Profile', 1, 1, 'C');
+$pdf->SetFillColor(4, 216, 209); // Set background color
+$pdf->Cell(0, 10, 'Library Management System', 1, 1, 'C', true); // Add 'true' parameter to fill the background
 $pdf->Ln(3);
 
-$adminList = getAdminData();
-$pdf->Cell(20, 10, 'Name:', 0);
-foreach ($adminList as $admin) {
 
-    $pdf->Cell(20, 10, $admin['name'], 0);
-}
-$pdf->Ln();
-$pdf->Cell(20, 10, 'Email:', 0);
-foreach ($adminList as $admin) {
+$userList = getAdminData();
+$pdf->Ln(6);
+
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->SetFillColor(129,219,153); // Set background color
+$pdf->Cell(0, 10, 'Your Profile', 1, 1, 'C', true); // Add 'true' parameter to fill the background
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Name: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['name'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Email ID: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['email'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Mobile NO: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['mobile'], 1, 1, 'C');
 
 
-    $pdf->Cell(20, 10, $admin['email'], 0); // Genre
+$pdf->SetLineWidth(0.5);
 
-}
-$pdf->Ln();
-$pdf->Cell(20, 10, 'Phone:', 0);
-foreach ($adminList as $admin) {
-
-    $pdf->Cell(30, 10, $admin['mobile'], 0);
-
-    $pdf->Ln(); 
-}
+// Draw a line
+$pdf->Line(10, 10, 100, 10);
 $pdf->Ln(10);
-$pdf->Cell(90, 10, 'Available Categories of Books', 1, 1, 'C');
+
+$pdf->Ln(10);
+$pdf->SetFont('Arial', 'B', 14); // Set font to bold and increase font size
+$pdf->SetFillColor(200, 200, 200); // Set background color for title
+$pdf->Cell(0, 10, 'Admin Issued Books', 1, 1, 'C', true); // Add 'true' parameter to fill the background
+$pdf->SetFont('Arial', '', 12); // Reset font to regular
 $pdf->Ln(3);
 $pdf->AliasNbPages();
 
 $pdf->SetFont('Arial', '', 12);
 
 $availList = getAvailData();
-$pdf->Cell(40, 10, 'Book Name', 1); 
-$pdf->Cell(40, 10, 'Book Author.', 1); 
-$pdf->Cell(20, 10, 'Book No.', 1); 
-$pdf->Cell(30, 10, 'Student Name.', 1); 
-$pdf->Cell(30, 10, 'Roll No.', 1); 
-$pdf->Cell(35, 10, 'Issue Date.', 1); 
+$pdf->SetFillColor(236, 229,14);
+$pdf->Cell(50, 10, 'Book Name', 1,0,'C',true); 
+$pdf->Cell(26, 10, 'Book Author', 1,0,'C',true); 
+$pdf->Cell(20, 10, 'Book No.', 1,0,'C',true); 
+$pdf->Cell(32, 10, 'Student Name', 1,0,'C',true); 
+$pdf->Cell( 27, 10, 'Roll No.', 1,0,'C',true); 
+$pdf->Cell(35, 10, 'Issue Date', 1,0,'C',true); 
+$pdf->SetFillColor(236, 229,14);
 $pdf->Ln();
 
 foreach ($availList as $avail) {
 
-    $pdf->Cell(40, 10, $avail['book_name'], 1);
-    $pdf->Cell(40, 10, $avail['book_author'], 1);
+    $pdf->Cell(50, 10, $avail['book_name'], 1);
+    $pdf->Cell(26, 10, $avail['book_author'], 1);
     $pdf->Cell(20, 10, $avail['book_no'], 1);
-    $pdf->Cell(30, 10, $avail['name'], 1);
-    $pdf->Cell(30, 10, $avail['id'], 1);
+    $pdf->Cell(32, 10, $avail['name'], 1);
+    $pdf->Cell(27, 10, $avail['id'], 1);
     $pdf->Cell(35, 10, $avail['Issued_date'], 1);
     $pdf->Ln();
 }
-$pdf->Output('books_list.pdf', 'I');
+$pdf->Output('Issued Books List.pdf', 'I');
 ?>
