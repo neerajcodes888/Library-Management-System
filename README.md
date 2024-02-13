@@ -14,7 +14,7 @@
 
 
 
-## A simple Library Management System implemented using PHP, HTML, CSS, and JavaScript.
+## A  Library Management System implemented using PHP, HTML, CSS, and JavaScript.
 
 ## Table of Contents
 
