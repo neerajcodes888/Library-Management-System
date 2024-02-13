@@ -9,10 +9,10 @@ require('../pdf/fpdf.php');
 
 function connectDB()
 {
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'lms';
+         $host = 'sql206.infinityfree.com';
+    $username = 'if0_35734489';
+    $password = '6XtiplIJWOb';
+    $dbname = 'if0_35734489_lms';
 
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -34,41 +34,48 @@ function getAdminData()
 
 $pdf = new FPDF();
 $pdf->AddPage();
-$pdf->Image('../images/pdf_logo.png', 0, -1, 90);
-$pdf->Ln(5);
+// $pdf->Image('../images/pdf_logo.png', 0, -1, 90);
+// $pdf->Ln(5);
+// Set line width
+$pdf->SetLineWidth(0.5);
+
+// Draw a line
+$pdf->Line(10, 10, 100, 10);
 $pdf->SetFont('Arial', 'B', 13);
-$pdf->Cell(40);
-$pdf->Cell(90, 10, 'Admin Profile', 1, 1, 'C');
+$pdf->SetFillColor(4, 216, 209); // Set background color
+$pdf->Cell(0, 10, 'Library Management System', 1, 1, 'C', true); // Add 'true' parameter to fill the background
 $pdf->Ln(3);
 
-$adminList = getAdminData();
-$pdf->Cell(20, 10, 'Name:', 0);
-foreach ($adminList as $admin) {
 
-    $pdf->Cell(20, 10, $admin['name'], 0);
-}
-$pdf->Ln();
-$pdf->Cell(20, 10, 'Role:', 0);
-foreach ($adminList as $admin) {
+$userList = getAdminData();
+$pdf->Ln(6);
 
-    $pdf->Cell(20, 10, $admin['role'], 0);
-}
-$pdf->Ln();
-$pdf->Cell(20, 10, 'Email:', 0);
-foreach ($adminList as $admin) {
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->SetFillColor(129,219,153); // Set background color
+$pdf->Cell(0, 10, 'Your Profile', 1, 1, 'C', true); // Add 'true' parameter to fill the background
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Name: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['name'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Email ID: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['email'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Mobile NO: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['mobile'], 1, 1, 'C');
+$pdf->Cell(95, 10, 'Role: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['role'], 1, 1, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->SetLineWidth(0.5);
+
+// Draw a line
+$pdf->Line(10, 10, 100, 10);
+$pdf->Ln(10);
 
 
-    $pdf->Cell(20, 10, $admin['email'], 0); // Genre
 
-}
-$pdf->Ln();
-$pdf->Cell(20, 10, 'Phone:', 0);
-foreach ($adminList as $admin) {
-
-    $pdf->Cell(30, 10, $admin['mobile'], 0);
-
-    $pdf->Ln(); 
-}
-
-$pdf->Output('books_list.pdf', 'I');
+$pdf->Output('E-ID Card', 'I');
 ?>
