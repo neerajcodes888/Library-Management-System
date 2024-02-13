@@ -9,10 +9,10 @@ require('../pdf/fpdf.php');
 
 function connectDB()
 {
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'lms';
+      $host = 'sql206.infinityfree.com';
+    $username = 'if0_35734489';
+    $password = '6XtiplIJWOb';
+    $dbname = 'if0_35734489_lms';
 
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -98,5 +98,5 @@ foreach ($availList as $avail) {
     $pdf->Cell(30, 10, $avail['message'], 1);
     $pdf->Ln();
 }
-$pdf->Output('books_list.pdf', 'I');
+$pdf->Output('Feedbacks.pdf', 'I');
 ?>
