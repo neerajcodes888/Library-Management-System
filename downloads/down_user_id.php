@@ -1,18 +1,18 @@
-<?Php
+<?php
 
 session_start();
-if(!isset($_SESSION['email']))
-{
-	die("Access denied");
+if (!isset($_SESSION['email'])) {
+    die("Access denied");
 }
 require('../pdf/fpdf.php');
 
 function connectDB()
 {
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'lms';
+    $host = 'sql206.infinityfree.com';
+    $username = 'if0_35734489';
+    $password = '6XtiplIJWOb';
+    $dbname = 'if0_35734489_lms';
+
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -33,67 +33,65 @@ function getuserData()
 
 $pdf = new FPDF();
 $pdf->AddPage();
-$pdf->Image('../images/pdf_logo.png', 0, -1, 90);
-$pdf->Ln(5);
+// $pdf->Image('../images/pdf_logo.png', 0, -1, 90);
+// $pdf->Ln(5);
+// Set line width
+$pdf->SetLineWidth(0.5);
+
+// Draw a line
+$pdf->Line(10, 10, 100, 10);
 $pdf->SetFont('Arial', 'B', 13);
-$pdf->Cell(40);
-$pdf->Cell(90, 10, 'Student Profile', 1, 1, 'C');
+$pdf->SetFillColor(4, 216, 209); // Set background color
+$pdf->Cell(0, 10, 'Library Management System', 1, 1, 'C', true); // Add 'true' parameter to fill the background
 $pdf->Ln(3);
 
+
 $userList = getuserData();
-$pdf->Cell(20, 10, 'Name:', 0);
-foreach ($userList as $user) {
+$pdf->Ln(6);
 
-    $pdf->Cell(20, 10, $user['name'], 0);
-}
-$pdf->Ln();
-$pdf->Cell(35, 10, 'Roll  Number:', 0);
-foreach ($userList as $user) {
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->SetFillColor(129,219,153); // Set background color
+$pdf->Cell(0, 10, 'Your Profile', 1, 1, 'C', true); // Add 'true' parameter to fill the background
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Name: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['name'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Roll Number: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['id'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Course: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['course'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Department: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['department'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Email ID: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['email'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Mobile NO: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['mobile'], 1, 1, 'C');
+$pdf->SetFont('Arial', 'B', 12);
+$pdf->Cell(95, 10, 'Address: ', 1, 0, 'C');
+$pdf->SetFont('Arial', '', 12);
+$pdf->Cell(95, 10, $userList[0]['address'], 1, 1, 'C');
 
-    $pdf->Cell(35, 10, $user['id'], 0); 
+$pdf->SetLineWidth(0.5);
 
-}
-$pdf->Ln();
-$pdf->Cell(20, 10, 'Course:', 0);
-foreach ($userList as $user) {
+// Draw a line
+$pdf->Line(10, 10, 100, 10);
+$pdf->Ln(10);
+// $pdf->SetFont('Arial', 'I', 10);
+// $pdf->Cell(20);
+// $pdf->Cell(0, 10, 'Come', 0, 1, 'L'); // Instruction for name
+// $pdf->Cell(20);
+// $pdf->Cell(0, 10, 'Go', 0, 1, 'L'); 
 
 
-    $pdf->Cell(20, 10, $user['course'], 0); // Genre
-
-
-    $pdf->Ln(); 
-}
-$pdf->Ln(1);
-$pdf->Cell(30, 10, 'Department:', 0);
-foreach ($userList as $user) {
-
-    $pdf->Cell(30, 10, $user['department'], 0);
-
-    $pdf->Ln(); 
-}
-$pdf->Ln(1);
-$pdf->Cell(30, 10, 'Email ID:', 0);
-foreach ($userList as $user) {
-
-    $pdf->Cell(30, 10, $user['email'], 0);
-
-    $pdf->Ln(); 
-}
-$pdf->Ln(1);
-$pdf->Cell(30, 10, 'Mobile No:', 0);
-foreach ($userList as $user) {
-
-    $pdf->Cell(30, 10, $user['mobile'], 0);
-
-    $pdf->Ln(); 
-}
-$pdf->Ln(1);
-$pdf->Cell(30, 10, 'Address:', 0);
-foreach ($userList as $user) {
-
-    $pdf->Cell(30, 10, $user['address'], 0);
-
-    $pdf->Ln(); 
-}
-$pdf->Output('books_list.pdf', 'I');
+$pdf->Output('ID_Card.pdf', 'I');
 ?>
