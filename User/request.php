@@ -7,6 +7,9 @@ session_start();
 require('functions.php');
 $connection = mysqli_connect("localhost", "root", "");
 $db = mysqli_select_db($connection, "lms");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception; 
 ?>
 <!DOCTYPE html>
 <html>
