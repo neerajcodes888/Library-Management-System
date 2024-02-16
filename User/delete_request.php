@@ -2,7 +2,7 @@
 session_start();
 if(!isset($_SESSION['email']))
 {
-	header("location:user_login.php");
+	die(include('error.html'));
 }
 
 $connection = mysqli_connect("localhost","root","");
