@@ -2,8 +2,7 @@
 
 	session_start();
 	if(!isset($_SESSION['email']))
-{
-	die("Access denied");
+{die(include('../user/error.html'));
 }
 	#fetch data from database
 	$connection = mysqli_connect("localhost","root","");
