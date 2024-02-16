@@ -2,7 +2,8 @@
 
 session_start();
 if(!isset($_SESSION['email']))
-{die(include('../user/error.html'));
+{
+	die(include('../user/error.html'));
 }
 ?>
 <!DOCTYPE html>
