@@ -3,7 +3,7 @@
 session_start();
 if(!isset($_SESSION['email']))
 {
-	die("Access denied");
+die(include('../user/error.html'));
 }
 require('../pdf/fpdf.php');
 
