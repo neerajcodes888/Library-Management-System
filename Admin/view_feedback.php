@@ -41,6 +41,7 @@ $query = "select * from feedback;";
 	<center>
 		<h4><b><u>Feedback</u></b></h4><br>
 	</center>
+	<center>
 	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-8">
