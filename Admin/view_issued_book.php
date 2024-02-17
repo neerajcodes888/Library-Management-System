@@ -39,6 +39,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 	</b>
 	</marquee></span><br><br>
 		<center><h4><b><u>Issued Book's Detail</u></b></h4><br></center>
+		<center>
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
