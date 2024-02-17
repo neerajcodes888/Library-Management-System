@@ -50,6 +50,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 	<center>
 		<h4>Not Returned Book's Detail</h4><br>
 	</center>
+	<center>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
