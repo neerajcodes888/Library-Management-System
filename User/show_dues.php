@@ -39,13 +39,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endCo
 	<span>
 		<marquee style="background-color:violet"><b>
 		Hey ,
-				<?php echo $_SESSION['name']; ?> Please Pay Your Dues if it is,Otherwise Fine will be Increasing*1 per day. Have a Look and download if you need!!!
+				<?php echo $_SESSION['name']; ?> Please Pay Your Dues if it is,Otherwise Fine will be Increasing 1 Rupee per day. Have a Look and download if you need!!!
 				</b>
 		</marquee>
 	</span><br><br>
 	<center>
 		<h4><b><u>Not Returned Book's Detail</u></b></h4><br>
 	</center>
+		  <center>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
