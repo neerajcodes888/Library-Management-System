@@ -44,6 +44,7 @@ $author_name = "";
 	<center>
 		<h4><b><u>Registered Authors</u></b></h4><br>
 	</center>
+	<center>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
