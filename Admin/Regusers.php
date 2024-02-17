@@ -41,6 +41,7 @@ $query = "select * from users";
 	<center>
 		<h4><b><u>Registered Users Detail</u></b></h4><br>
 	</center>
+	<center>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
