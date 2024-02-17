@@ -51,6 +51,7 @@ $query = "select books.book_id,books.book_name,books.book_no,book_price,books.qu
 	<center>
 		<h4><u><b>Registered Book's Details</b></u></h4><br>
 	</center>
+<center>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
