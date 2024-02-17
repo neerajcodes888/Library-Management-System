@@ -46,6 +46,7 @@ if(!isset($_SESSION['email']))
 		</form>
 	</div>
 		<center><h4><u><b>Registered Book's Details</b></u></h4><br></center>
+	<center>
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
