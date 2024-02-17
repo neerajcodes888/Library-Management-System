@@ -35,6 +35,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 	<b>		Dear,<?php echo $_SESSION['name'];?> Here have a look all of the Registered Categories With Details and download the list if needed!!!</b>
 </marquee></span><br><br>
 		<center><h4><b><u>Registered Book's Category</u></b></h4><br></center>
+	<center>
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
