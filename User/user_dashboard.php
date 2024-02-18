@@ -9,7 +9,6 @@ if(!isset($_SESSION['email']))
 	header("location:user_login.php");
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
