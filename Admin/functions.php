@@ -13,6 +13,7 @@
 			$author_count = $row['author_count'];
 		}
 		return($author_count);
+		
 	}
 	function get_user_count(){
 		$connection = mysqli_connect("localhost","root","");
