@@ -9,7 +9,7 @@ if (isset($_GET['email']) && isset($_GET['v_code'])) {
     <script type="text/javascript">
         alert("Verification done!!");
 
-    </script>
+ </script>
     <?php
     if ($result) {
         if (mysqli_num_rows($result) == 1) {
