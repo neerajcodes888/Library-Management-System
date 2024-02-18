@@ -81,7 +81,7 @@
 		$query = "update books set book_name = '$_POST[book_name]',author_id = $_POST[author_id],cat_id = $_POST[cat_id],book_price = $_POST[book_price] where book_no = $_GET[bn]";
 		$query_run = mysqli_query($connection,$query);
 		?>
-			<script type="text/javascript">
+		<script type="text/javascript">
 		alert("Book edited Successfully");
 	</script>
 	<?php
