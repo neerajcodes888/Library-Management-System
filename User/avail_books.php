@@ -126,6 +126,5 @@ if(!isset($_SESSION['email']))
 						}
 					?>	
 				</table>
-
 </body>
 </html>
