@@ -18,6 +18,7 @@ require("functions.php");
 		$email = $row['email'];
 		$mobile = $row['mobile'];
 	}
+
 ?>
 <!DOCTYPE html>
 <html>
