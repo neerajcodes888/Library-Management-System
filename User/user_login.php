@@ -4,7 +4,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>LMS</title>
 	<meta charset="utf-8" name=<?php
