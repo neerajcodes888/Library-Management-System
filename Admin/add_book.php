@@ -43,7 +43,6 @@ while ($row = mysqli_fetch_assoc($query_run)) {
 		}
 	</style>
 </head>
-
 <body>
 <?php include('navbar.php')?>
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: salmon">
