@@ -119,10 +119,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endCo
             </a>
           </p>
           <p>
-
             <a href="mailto:neerajmail888@gmail.com" class="text-reset" target="blank">
             <i class="fa-regular fa-envelope fa-bounce fa-2xl" style="color: #e00f00;"></i>
-
 
           </p>
           <a href="tel:6031112298" target="blank">
