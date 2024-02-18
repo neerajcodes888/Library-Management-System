@@ -13,7 +13,6 @@ use PHPMailer\PHPMailer\Exception;
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Request Book</title>
 		<link rel = "icon" href = 
