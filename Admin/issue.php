@@ -10,7 +10,6 @@ $db = mysqli_select_db($connection, "lms");
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Request Book</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
