@@ -3,6 +3,7 @@
 // {
 // 	die("Access denied");
 // }
+
 $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");
 	$query = "update users set name = '$_POST[name]',email = '$_POST[email]',mobile = '$_POST[mobile]',address = '$_POST[address]'";
