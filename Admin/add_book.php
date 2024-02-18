@@ -21,7 +21,6 @@ while ($row = mysqli_fetch_assoc($query_run)) {
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Add New Book</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
