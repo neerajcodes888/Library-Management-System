@@ -18,7 +18,6 @@
 	        		<a class="dropdown-item" href="../logout.php">Logout</a>
 	        	</div>
 		      </li>
-	
 		    </ul>
 		</div>
 	</nav>
