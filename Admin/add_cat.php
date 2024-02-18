@@ -105,7 +105,6 @@ Dear <?php echo $_SESSION['name'];?> , Please add book category by filling ll th
 		</div>
 </body>
 </html>
-
 <?php
 	if(isset($_POST['add_cat']))
 	{
