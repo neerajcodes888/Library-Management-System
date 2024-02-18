@@ -6,7 +6,6 @@ if(!isset($_SESSION['email']))
 }
 
 	#fetch data from database
-
 	$connection = mysqli_connect("localhost","root","");
 	$db = mysqli_select_db($connection,"lms");
 
