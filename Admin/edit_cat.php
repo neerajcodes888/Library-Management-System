@@ -59,7 +59,7 @@
 		$query = "update category set cat_name = '$_POST[cat_name]' where cat_id = $_GET[cid]";
 		$query_run = mysqli_query($connection,$query);
 		?>
-			<script type="text/javascript">
+		<script type="text/javascript">
 		alert("Book Category edited Successfully");
 	</script>
 	<?php
