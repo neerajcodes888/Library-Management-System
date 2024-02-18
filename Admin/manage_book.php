@@ -18,6 +18,7 @@ while ($row = mysqli_fetch_assoc($query_run)) {
 	$email = $row['email'];
 	$mobile = $row['mobile'];
 }
+
 ?>
 <!DOCTYPE html>
 <html>
