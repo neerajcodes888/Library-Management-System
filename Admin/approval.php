@@ -105,7 +105,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 		<div class="col-md-2"></div>
 	</div>
 </body>
-
 </html>
 
 
