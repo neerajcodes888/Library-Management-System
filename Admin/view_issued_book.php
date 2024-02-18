@@ -63,7 +63,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 							<td><?php echo $row['name'];?></td>
 							<td><?php echo $row['id'];?></td>
 						</tr>
-
 					<?php
 						}
 					?>	
