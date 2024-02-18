@@ -11,7 +11,6 @@ $author_name = "";
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Reg Authors</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
