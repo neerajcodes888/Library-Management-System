@@ -45,6 +45,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 					<button type="submit" name="update" class="btn btn-primary">Update Password</button>
 				</form>
 			</div>
+			
 			<div class="col-md-4"></div>
 		</div>
 </body>
