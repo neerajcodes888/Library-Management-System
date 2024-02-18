@@ -11,7 +11,6 @@ $query = "select * from request_books where student_id='$_SESSION[id]'";
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Show Requests</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
