@@ -16,7 +16,6 @@ $query_run = mysqli_query($connection, $query);
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Not Returned Books</title>
     <meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
