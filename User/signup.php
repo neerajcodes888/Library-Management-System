@@ -6,7 +6,6 @@ if(isset($_SESSION['email_alert']))
     $msg="Email already Exists";
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
