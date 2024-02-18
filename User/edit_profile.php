@@ -4,8 +4,7 @@ if(!isset($_SESSION['email']))
 {
 	header("location:user_login.php");
 }
-
-	#fetch data from database
+#fetch data from database
 	$connection = mysqli_connect("localhost","root","");
 	$db = mysqli_select_db($connection,"lms");
 	$id="";
