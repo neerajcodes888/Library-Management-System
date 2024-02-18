@@ -29,7 +29,6 @@ $query = "select * from users";
 		}
 	</style>
 </head>
-
 <body>
 <?php include('navbar.php')?>
 	<span>
