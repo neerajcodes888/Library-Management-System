@@ -26,7 +26,6 @@ if(!isset($_SESSION['email']))
 		}
 	</style>
 </head>
-
 <body>
 <?php include('navbar.php')?>
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:salmon">
