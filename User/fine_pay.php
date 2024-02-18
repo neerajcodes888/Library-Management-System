@@ -16,14 +16,11 @@ if($row['dues_status'] == "Paid")
 	window.location.href = "show_dues.php";
 </script>
 <?php
-
 }
 ?>
-
 else
 <?php
 {
-	
 	$query = "update issued_books set dues_status='Paid' where book_no= $_GET[bn]";
 	$query_run = mysqli_query($connection,$query);
 	$query = "update books set quantity=quantity+1 where book_no= $_GET[bn]";
