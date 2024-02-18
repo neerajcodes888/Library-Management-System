@@ -20,6 +20,7 @@ $db = mysqli_select_db($connection,"lms");
 			alert("Updated successfully...");
 			window.location.href = "admin_dashboard.php";
 		</script>
+
 		<?php
 	}
 	else{
