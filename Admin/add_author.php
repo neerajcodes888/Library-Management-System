@@ -106,7 +106,6 @@ Dear <?php echo $_SESSION['name'];?> , Please add the author followed by name an
 		</div>
 </body>
 </html>
-
 <?php
 	if(isset($_POST['add_author']))
 	{
