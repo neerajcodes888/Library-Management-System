@@ -6,6 +6,7 @@ $db = mysqli_select_db($connection,"lms");
 	$query_run = mysqli_query($connection,$query);
 	while ($row = mysqli_fetch_assoc($query_run)){
 		$book_count = $row['book_count'];
+
 		
 	}
 ?>
