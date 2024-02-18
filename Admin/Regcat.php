@@ -44,7 +44,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
 						<th>Category ID</th>
 							<th>Category Name</th>
 						</tr>
-				
 					<?php
 						$query_run = mysqli_query($connection,$query);
 						while ($row = mysqli_fetch_assoc($query_run)){
