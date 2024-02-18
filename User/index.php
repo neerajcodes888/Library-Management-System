@@ -7,7 +7,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>LMS</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
