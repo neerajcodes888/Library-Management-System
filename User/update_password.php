@@ -21,8 +21,7 @@ $db = mysqli_select_db($connection,"lms");
 			window.location.href = "user_dashboard.php";
 		</script>
 		<?php
-	}
-		
+	}	
 	else{
 		?>
 		<script type="text/javascript">
