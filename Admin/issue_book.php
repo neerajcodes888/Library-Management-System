@@ -13,6 +13,7 @@ $book_no = "";
 $price = "";
 $quantity="";
 $query = "select books.book_id,books.book_name,books.book_no,book_price,books.quantity,authors.author_name from books left join authors on books.author_id = authors.author_id";
+
 ?>
 <!DOCTYPE html>
 <html>
