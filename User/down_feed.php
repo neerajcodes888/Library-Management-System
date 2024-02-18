@@ -22,7 +22,6 @@ function connectDB()
         die("Connection failed: " . $e->getMessage());
     }
 }
-
 function getAdminData()
 {
     $conn = connectDB();
