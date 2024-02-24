@@ -24,7 +24,6 @@ $db = mysqli_select_db($connection,"lms");
 		<?php
 	}
 	else{
-		
 		?>
 		<script type="text/javascript">
 			alert("Wrong Admin Password...");
