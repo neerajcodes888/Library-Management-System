@@ -10,7 +10,6 @@ $db = mysqli_select_db($connection,"lms");
 	$query_run = mysqli_query($connection,$query);
 ?>
 <script type="text/javascript">
-	
 	alert("Category Deleted successfully...");
 	window.location.href = "manage_cat.php";
 </script>
