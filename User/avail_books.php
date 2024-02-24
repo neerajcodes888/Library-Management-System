@@ -73,7 +73,6 @@ if(!isset($_SESSION['email']))
 							<td><?php echo $row['book_no'];?></td>
 							<td><?php echo $row['quantity'];?></td>
 						</tr>
-
 					<?php
 						}
 					?>	
