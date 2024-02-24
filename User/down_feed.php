@@ -6,7 +6,6 @@ if(!isset($_SESSION['email']))
 	die(include('error.html'));
 }
 require('../pdf/fpdf.php');
-
 function connectDB()
 {
     $host = 'localhost';
