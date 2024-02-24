@@ -5,7 +5,7 @@ require("functions.php");
 {
 	die("Access denied");
 }
-	#fetch data from database
+	
 	$connection = mysqli_connect("localhost","root","");
 	$db = mysqli_select_db($connection,"lms");
 	$name = "";
