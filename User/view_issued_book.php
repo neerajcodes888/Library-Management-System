@@ -69,7 +69,6 @@ if(!isset($_SESSION['email']))
 							<td><?php echo $row['Issued_date'];?></td>
 							<td><?php echo $row['return_date'];?></td>
 						</tr>
-
 					<?php
 						}
 					?>	
