@@ -124,5 +124,4 @@ Hello , Admins!! Here is the login for your Portal.Please Enter correct Credenti
 	</div>
 	<?php include('../footer.php') ?>
 </body>
-
 </html>
