@@ -95,5 +95,4 @@ while ($row = mysqli_fetch_assoc($query_run)) {
 		<div class="col-md-4"></div>
 	</div>
 </body>
-
 </html>
