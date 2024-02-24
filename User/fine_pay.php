@@ -7,7 +7,7 @@ if(!isset($_SESSION['email']))
 $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");
 $query = "select * from issued_books where book_no= $_GET[bn]";
-	$query_run = mysqli_query($connection,$query);
+$query_run = mysqli_query($connection,$query);
 if($row['dues_status'] == "Paid")
 {
 	?>
