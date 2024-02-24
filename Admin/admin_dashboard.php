@@ -8,6 +8,7 @@ if(!isset($_SESSION['email']))
 ?>
 <!DOCTYPE html>
 <html>
+	
 <head>
 	<title>Dashboard</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
