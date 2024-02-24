@@ -2,7 +2,6 @@
 session_start();
 $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");
-
 require("functions.php");
 if(!isset($_SESSION['email']))
 {
