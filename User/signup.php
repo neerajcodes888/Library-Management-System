@@ -160,5 +160,4 @@ background-attachment: fixed;
 	</div>
 	<?php include('footer.php') ?>
 </body>
-
 </html>
