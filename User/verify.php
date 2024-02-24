@@ -1,5 +1,4 @@
 <?php
-
 $connection = mysqli_connect("localhost", "root", "");
 $db = mysqli_select_db($connection, "lms");
 if (isset($_GET['email']) && isset($_GET['v_code'])) {
