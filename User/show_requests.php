@@ -4,7 +4,6 @@ if(!isset($_SESSION['email']))
 {
 	die(include('error.html'));
 }
-#fetch data from database
 $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");
 $query = "select * from request_books where student_id='$_SESSION[id]'";
