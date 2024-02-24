@@ -11,7 +11,6 @@ $db = mysqli_select_db($connection,"lms");
 ?>
 <script type="text/javascript">
 	alert("Author Deleted successfully...");
-
 	window.location.href = "manage_author.php";
 </script>
 
