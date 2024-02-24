@@ -8,7 +8,6 @@ $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");	
 $query = "delete from feedback where id = $_GET[in]";
 	$query_run = mysqli_query($connection,$query);
-
 ?>
 <script type="text/javascript">
 	alert("Feedback removed successfully...");
