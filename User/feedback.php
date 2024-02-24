@@ -4,7 +4,6 @@ if(!isset($_SESSION['email']))
 {
 	die(include('error.html'));
 }
-
 ?>
 <!DOCTYPE html>
 <html>
