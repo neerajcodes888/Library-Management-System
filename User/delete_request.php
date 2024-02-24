@@ -4,6 +4,7 @@ if(!isset($_SESSION['email']))
 {
 	die(include('error.html'));
 }
+
 $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");
 	$query = "delete from request_books where request_no = $_GET[rn]";
