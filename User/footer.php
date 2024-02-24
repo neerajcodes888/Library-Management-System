@@ -15,34 +15,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endCo
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:
-     
-      </span>
-    </div> -->
-    <!-- Left -->
-
-    <!-- Right -->
-    <!-- <div>
-     
-      <i class="bi bi-facebook"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-      <i class="bi bi-envelope-at-fill"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-github"></i>
-      </a>
-    </div> -->
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+  
 
   <!-- Section: Links  -->
   <section class="">
