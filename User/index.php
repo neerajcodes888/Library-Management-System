@@ -1,8 +1,4 @@
 <?php
-// if(!isset($_SESSION['email']))
-// {
-// 	die("Access denied");
-// }
 session_start();
 ?>
 <!DOCTYPE html>
