@@ -5,7 +5,7 @@ if(!isset($_SESSION['email']))
 {
 	die(include('../user/error.html'));
 }
-#fetch data from database
+
 $connection = mysqli_connect("localhost","root","");
 $db = mysqli_select_db($connection,"lms");
 $name = "";
