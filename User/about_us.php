@@ -19,7 +19,6 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
-
         .row.heading h2 {
             color: #fff;
             font-size: 52.52px;
