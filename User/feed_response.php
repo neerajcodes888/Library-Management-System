@@ -41,7 +41,6 @@ if(!isset($_SESSION['email']))
 					<table class="table-bordered" width="1220px"  style="text-align: center">
 						<tr style="background-color:#F5DF4D">
                         <th>Feedback No</th>
-							
 							<th>feedback date</th>
 							<th>Feedback Realted to</th>
                             <th>Your Feedback</th>
