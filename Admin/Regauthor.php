@@ -3,6 +3,7 @@ $connection = mysqli_connect("localhost", "root", " ");
 $db = mysqli_select_db($connection, "lms");
 session_start();
 if (!isset($_SESSION['email'])) {
+	
 	die(include('../user/error.html'));
 }
 
