@@ -75,7 +75,7 @@ This project is a web-based Library Management System that allows users to manag
 
 
 
-https://github.com/neerajcodes888/Library-Management-System/assets/98253646/aa32ec4c-fa31-45ed-8509-4dd4b9af907b
+https://github.com/neerajcodes888/Library-Management-System/blob/main/lms_demo.gif
 
 
 
