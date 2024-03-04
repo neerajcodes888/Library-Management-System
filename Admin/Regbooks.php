@@ -3,8 +3,7 @@
 	if(!isset($_SESSION['email']))
 {
 	die(include('../user/error.html'));
-}
-	
+}	
 	$connection = mysqli_connect("localhost","root","");
 	$db = mysqli_select_db($connection,"lms");
 	$book_name = "";
