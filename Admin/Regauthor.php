@@ -6,7 +6,6 @@ if (!isset($_SESSION['email'])) {
 	
 	die(include('../user/error.html'));
 }
-
 $query = "select * from Authors";
 $author_name = "";
 ?>
