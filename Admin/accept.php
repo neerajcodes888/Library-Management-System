@@ -207,8 +207,7 @@ else{
     $query_run=mysqli_query($connection, $query);
 	// $query1 = "update books set quantity=quantity-1 where book_no=$_POST[book_no]";
 	// $query_run= mysqli_query($connection, $query1);
-	// $query2 = "update request_books set status='Request Accepted' where request_no=$_GET[rn]";
-	
+	// $query2 = "update request_books set status='Request Accepted' where request_no=$_GET[rn]";	
   ?>
   <script type="text/javascript">
 alert("Book Issued Successfully");
