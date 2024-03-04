@@ -73,7 +73,8 @@ This project is a web-based Library Management System that allows users to manag
 ## Demo
 
 
-lms_demo.gif
+[lms_demo](https://github.com/neerajcodes888/Library-Management-System/blob/main/lms_demo.gif)
+
 
 
 
