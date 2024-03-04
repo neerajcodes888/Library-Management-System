@@ -1,7 +1,6 @@
 ![Library-Management-System](https://socialify.git.ci/neerajcodes888/Library-Management-System/image?font=Raleway&language=1&name=1&pattern=Charlie%20Brown&stargazers=1&theme=Dark)
 
 
-![lms](https://github.com/neerajcodes888/Library-Management-System/blob/main/LMS_Demo-min.gif)
 
 
 # Deployed Link(Click  👇)
