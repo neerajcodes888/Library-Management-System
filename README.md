@@ -1,8 +1,6 @@
 ![Library-Management-System](https://socialify.git.ci/neerajcodes888/Library-Management-System/image?font=Raleway&language=1&name=1&pattern=Charlie%20Brown&stargazers=1&theme=Dark)
 
 
-
-
 # Deployed Link(Click  👇)
 
 
@@ -23,7 +21,7 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
+- [Video Demo](#demo)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -72,9 +70,13 @@ This project is a web-based Library Management System that allows users to manag
    git clone https://github.com/neerajcodes888/library-management-system.git
 
 
-## Screenshots
+## Demo
 
-![lms](https://github.com/neerajcodes888/Library-Management-System/blob/main/LMS_Demo-min.gif)
+
+
+
+https://github.com/neerajcodes888/Library-Management-System/assets/98253646/aa32ec4c-fa31-45ed-8509-4dd4b9af907b
+
 
 
 
