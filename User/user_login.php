@@ -38,7 +38,7 @@ session_start();
             padding: 20px;
             border-radius: 10px;
             animation: fadeInLeft 1s;
-            height: 100%;
+            height: 90%;
         }
 
         @media (max-width: 768px) {
@@ -102,38 +102,19 @@ session_start();
         .btn-warning:hover {
             background-color: #e6b800;
         }
+        @media (max-width: 768px) {
+        #sidebar-content {
+            height: auto;
+            max-height: none; /* Reset max-height for smaller screens */
+            overflow-y: visible; /* Show full content without scroll on smaller screens */
+        }
+    }
+
     </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand ml-3" href="index.php" style="color:whitesmoke">Library Management System (LMS)</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="user_login.php">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.php">Register</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="admin/index.php">Admin Login</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="about_us.php">About Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<?php include('navbar_home.php') ?>
 
     <!-- Marquee -->
     <marquee style="background-color: lightblue;">
@@ -212,7 +193,7 @@ session_start();
 								$_SESSION['id'] = $row['id'];
 								?>
 			<script type="text/javascript">toastr.success('Login successful')
-			window.location.href = "admin/admin_dashboard.php";
+			window.location.href = "admin_dashboard.php";
 			</script>
 								<?php
 							}
