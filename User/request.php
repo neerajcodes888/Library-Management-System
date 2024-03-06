@@ -1,14 +1,6 @@
-<?php
-session_start();
-require('functions.php');
-$connection = mysqli_connect("localhost", "root", "");
-$db = mysqli_select_db($connection, "lms");
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception; 
-?>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Request Book</title>
 		<link rel = "icon" href = 
@@ -249,7 +241,7 @@ function sendmail($auth,$bkn,$bn)
             
             
             
-             $bodyRecipient1 = "Dear $name,   Your book request has been palced. here are some details of your requested book 
+             $bodyRecipient1 = "Dear $name,   Your book request has been placed. here are some details of your requested book 
 $auth
 <ul>
 <li><b>Book Number</b> : $bn</li>
@@ -332,3 +324,4 @@ alert("Error Ocuured");
 } 
 ?>
 </html>
+
