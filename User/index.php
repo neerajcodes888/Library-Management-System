@@ -35,13 +35,13 @@ session_start();
         }
 
         body {
-            background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
         }
 
         .card {
     width: 100%; /* Make all cards occupy full width */
+    
 }
 
 .card-img-top {
