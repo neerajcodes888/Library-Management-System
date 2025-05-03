@@ -9,6 +9,7 @@ if (!isset($_SESSION['email'])) {
 $query = "select * from Authors";
 $author_name = "";
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
