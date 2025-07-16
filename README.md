@@ -11,7 +11,6 @@
 
 
 
-
 ## A  Library Management System implemented using PHP, HTML, CSS, and JavaScript , MySQL.
 
 ## Table of Contents
